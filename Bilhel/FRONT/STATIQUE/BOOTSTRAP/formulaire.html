@@ -12,7 +12,7 @@
 <header>
     <div class="row">
         <div class= "col-8"><img src="jarditou_logo.jpg" alt="Logo Jarditou" height="45px" width="150px"></div>
-        <div class="col-4" style="font-size: 25px";><p>La qualité depuis 70 ans</p></div>
+        <div class="col-4" style="font-size: 25px"><p>La qualité depuis 70 ans</p></div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">JardiTou.com</a>
@@ -38,7 +38,7 @@
     <p>*Ces zones sont obligatoires</p>
 
     <form action="http://bienvu.net/script.php" method="GET" id="formulaire_contact">
-
+        <h1>Vos coordonées</h1>
         <div class="form-group">      
         <label for="exampleFormControlInput1">Nom*</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Veuillez saisir votre nom" required><br>
@@ -63,21 +63,20 @@
 
         <div class="form-group">      
             <label for="date">Date de naissance*</label>
-            <input type="date" class="form-control" id="date" placeholder="Veuillez saisir votre nom" required>        
+            <input type="date" class="form-control" id="date" required>        
         </div>
 
         <div class="form-group">      
-            <label for="exampleFormControlInput1">Code Postal*</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" required><br>
+            <input type="text" class="form-control"  required><br>
             <label for="exampleFormControlInput2">Adresse</label>
-            <input type="text" class="form-control" id="exampleFormControlInput2">
+            <input type="text" class="form-control" >
             <label for="exampleFormControlInput1">Ville</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1"><br>
+            <input type="text" class="form-control" ><br>
             <label for="exampleFormControlInput2">Email*</label>
-            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="dave.loper@afpa.fr" required>
+            <input type="text" class="form-control"  placeholder="dave.loper@afpa.fr" required>
             </div>
 
-        <legend>Votre demande</legend>
+        <h1>Votre demande</h1>
         <label>Sujet*</label>
         <div class="form-group">
             <select class="custom-select" required>
@@ -107,18 +106,19 @@
 <br>
 </section>
 <footer>
-  <div class="row">
-  </div class="col-12">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav mr-auto">
-           <li class="nav-item"><a class="nav-link" href="#">mentions légales</a></li>
-           <li class="nav-item"><a class="nav-link" href="#">horaires</a></li>                  
-           <li class="nav-item"><a class="nav-link" href="#">plan du site</a></li>
-         </ul>
-      </div>
-  </nav>
-  </div>
+    <div class="row">
+        <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">mentions légales</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">horaires</a></li>                  
+                <li class="nav-item"><a class="nav-link" href="#">plan du site</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+        </div>
 </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
