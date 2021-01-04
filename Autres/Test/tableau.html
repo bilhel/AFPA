@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Accueil</title>
+    <title>Tableau</title>
 </head>
 
 <body>
@@ -15,18 +15,14 @@
         <div class="col-3" style="font-size: 35px;"><p>Tout le jardin</p></div>
     </div>
 </header>
-
-<div class="row">
-    <div class="col-12">
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="row">
+        <div class="col-12">
+<nav class="navbar navbar-expand navbar-light bg-light">
     <a class="navbar-brand" href="#">Jarditou.com</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarToggler">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"><a class="nav-link" href="index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="tableau.html">Tableau</a></li>                  
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item active"><a class="nav-link" href="tableau.html">Tableau</a></li>                  
         <li class="nav-item"><a class="nav-link" href="formulaire.html">Formulaire</a></li>
         </ul>
     <form class="form-inline">
@@ -35,33 +31,77 @@
     </form>
     </div>
 </nav>
-</div>
+        </div>
     </div>
-<section>
     <div class="row">
     <div class="col-12">
         <img src="promotion.jpg" alt="Promotion" height="100%" width="100%">
     </div>
     </div>
 
-    <div class="row m-auto">
-        <div class="col-md-8 col-12">
-<br>
-        <h3>L'entreprise</h3>
-            <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.</p>
-            <p>Créée il y a 70 ans, notre entreprise vend des fleurs, arbustes, matériel à main et motorisés.</p>
-            <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie.</p>
-        <h3>Qualité</h3>
-            <p>Nous mettrons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
-            <p>Vous serez séduit par notre expertise, nos compétence et notre sérieux.</p>
-        <h3>Devis gratuit</h3>
-            <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d'intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>
-    </div>
-    <div class= "col-md-4 bg-warning text-center p-2" style="font-size: 25px;">[Colonne de droite]</div>
-    </div>
-</section>
+    <div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+          <thead class="thead-light" style="font-size: x-large;">
+            <tr>
+              <th>Photo</th>
+              <th>ID</th>
+              <th>Catégorie</th>
+              <th>Libellé</th>
+              <th>Prix</th>
+              <th>Couleur</th>
+            </tr>
+          </thead>
 
-<footer>
+          <tr class="table-warning">
+            <td><img src="7.jpg" alt="aramis" height="120" width="120"></td> 
+            <td>7</td>
+            <td>Barbecue</td>
+            <td>Aramis</td>
+            <td>110.00€</td>
+            <td>Brun</td>
+          </tr>
+
+          <tr>
+            <td><img src="8.jpg" alt="athos" height="120" width="120"></td>
+            <td>8</td>
+            <td>Barbecue</td>
+            <td>Athos</td>
+            <td>249.00€</td>
+            <td>Noir</td>
+          </tr>
+
+          <tr class="table-warning">
+            <td><img src="11.jpg" alt="clatronic" height="120" width="120"></td> 
+            <td>11</td>
+            <td>Clatronic</td>
+            <td>Athos</td>
+            <td>135.00€</td>
+            <td>Chrome</td>
+          </tr>
+
+          <tr>
+            <td><img src="12.jpg" alt="camping" height="120" width="120"></td> 
+            <td>12</td>
+            <td>Barbecue</td>
+            <td>Camping</td>
+            <td>88.00€</td>
+            <td>Noir</td>
+          </tr>
+
+          <tr class="table-warning">
+            <td><img src="13.jpg" alt="brouette" height="120" width="120"></td> 
+            <td>13</td>
+            <td>Brouette</td>
+            <td>Green</td>
+            <td>49.00€</td>
+            <td>Verte</td>
+          </tr>
+        </table>
+    </div>
+    </div>
+  </div>
+  <footer>
     <div class="row my-3">
     <div class="col-12">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
