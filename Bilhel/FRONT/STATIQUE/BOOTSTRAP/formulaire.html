@@ -15,15 +15,16 @@
         <div class="col-3" style="font-size: 35px;"><p>Tout le jardin</p></div>
     </div>
 </header>
+
 <div class="row">
     <div class="col-12">
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
     <a class="navbar-brand" href="#">Jarditou.com</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav mr-auto">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
         <li class="nav-item"><a class="nav-link" href="tableau.html">Tableau</a></li>                  
         <li class="nav-item active"><a class="nav-link" href="formulaire.html">Formulaire</a></li>
@@ -33,60 +34,66 @@
         <button class="btn btn-outline-success" type="submit">Rechercher</button>
     </form>
     </div>
-</nav>
-</div>
+  </nav>
+  </div>
     </div>
-<section>
+
     <div class="row">
     <div class="col-12">
         <img src="promotion.jpg" alt="Promotion" height="100%" width="100%">
     </div>
     </div>
+
     <p>*Ces zones sont obligatoires</p>
 
-    <form action="http://bienvu.net/script.php" method="GET" id="formulaire_contact">
+    <div class="row">
+        <div class="col-12">
+    <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact">
         <h1>Vos coordonées</h1>
         <div class="form-group">      
-        <label for="exampleFormControlInput1">Nom*</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Veuillez saisir votre nom" required><br>
-        <label for="exampleFormControlInput2">Prénom*</label>
-        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Veuillez saisir votre prénom" required>
+        <label id="nom">Nom*</label>
+        <input type="text" class="form-control" id="Nom" name="Nom" placeholder="Veuillez saisir votre nom" required><br>
+        <label id="prenom">Prénom*</label>
+        <input type="text" class="form-control" id="Prénom" name="Prénom" placeholder="Veuillez saisir votre prénom" required>
         </div>
 
         <label>Sexe*</label><br>
+        <div class="form-group">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
-            <label class="form-check-label" for="inlineRadio1">Féminin</label>
+            <input class="form-check-input" type="radio" name="Sexe" id="Sexe1" value="Féminin" required>
+            <label class="form-check-label" id="feminin">Féminin</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
-            <label class="form-check-label" for="inlineRadio2">Masculin</label>
+            <input class="form-check-input" type="radio" name="Sexe" id="Sexe2" value="Masculin" required>
+            <label class="form-check-label" id="masculin">Masculin</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" required>
-            <label class="form-check-label" for="inlineRadio3">Neutre</label>
+            <input class="form-check-input" type="radio" name="Sexe" id="Sexe3" value="Neutre" required>
+            <label class="form-check-label" id="neutre">Neutre</label>
         </div>
-        <br><br>
-
-        <div class="form-group">      
-            <label for="date">Date de naissance*</label>
-            <input type="date" class="form-control" id="date" required>        
         </div>
 
         <div class="form-group">      
-            <input type="text" class="form-control"  required><br>
-            <label for="exampleFormControlInput2">Adresse</label>
-            <input type="text" class="form-control" >
-            <label for="exampleFormControlInput1">Ville</label>
-            <input type="text" class="form-control" ><br>
-            <label for="exampleFormControlInput2">Email*</label>
-            <input type="text" class="form-control"  placeholder="dave.loper@afpa.fr" required>
+            <label id="date">Date de naissance*</label>
+            <input type="date" class="form-control" name="Date de naissance" id="Date_de_naissance" required>        
+        </div>
+
+        <div class="form-group">
+            <label id="codepostal">Code Postal*</label>
+            <input type="text" class="form-control" name="Code Postal" id="Code_Postal" required>
+            <label id="adresse">Adresse</label>
+            <input type="text" class="form-control" name="Adresse" id="Adresse">
+            <label id="exampleFormControlInput1">Ville</label>
+            <input type="text" class="form-control" name="Ville" id="Ville"><br>
+            <label id="email">Email*</label>
+            <input type="email" class="form-control" name="Email" id="Email" placeholder="dave.loper@afpa.fr" required>
             </div>
 
         <h1>Votre demande</h1>
-        <label>Sujet*</label>
-        <div class="form-floating">
-            <select class="form-control" required>
+        
+        <div class="form-group">
+            <label>Sujet*</label>
+            <select class="form-control" name="Sujet" id="Sujet" required>
               <option value="">Veuillez séléctionner un sujet</option>
               <option value="">Mes commandes</option>
               <option value="">Question sur un produit</option>
@@ -97,7 +104,7 @@
 
         <label>Votre question*</label>
         <div class="input-group" >
-        <textarea class="form-control" required></textarea>
+        <textarea class="form-control" name="Question" id="Question" required></textarea>
         </div>
         <br>
     
@@ -111,7 +118,8 @@
         <button type="reset" class="btn btn-dark">Annuler</button>
     </form>
 <br>
-</section>
+    </div>
+        </div>
 <footer>
     <div class="row my-3">
     <div class="col-12">
