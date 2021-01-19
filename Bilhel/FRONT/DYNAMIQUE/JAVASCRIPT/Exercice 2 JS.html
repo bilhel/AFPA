@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Table de multiplication</title>
+</head>
+<body>
+
+<script>
+
+	nombre = window.prompt("Entrez le numéro de la table :");
+	table_multiplication(nombre);
+
+	function table_multiplication(nombre)
+	{
+	var i;
+	for (i=1; i<=10; i++) 
+	{
+		resultat = nombre*i;
+		console.log(i + " x " + nombre + " = " + nombre*i);
+	}
+	};
+
+</script>
+</body>
+</html>

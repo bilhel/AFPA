@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tableau</title>
+</head>
+<body>
+
+<script>
+
+var PU = window.prompt("Entrer le prix unitaire du produit");
+var QTECOM = window.prompt("Entrer la quantité de la commande");
+var TOT = PU*QTECOM;
+var TOT2;
+var TOT3;
+
+// Remise possible
+if (TOT <= 200 && TOT >= 100)
+{
+    TOT2 = TOT*0.95;
+}
+else if (TOT>200)
+{
+    TOT2 = TOT*0.9;
+}
+else
+{
+    TOT2 = TOT;
+};
+
+// Frais de port
+if (TOT2>500)
+{
+    TOT3 = TOT2;
+}
+else
+{
+    TOT3 = TOT2*1.02;
+    if (TOT3 < TOT2 + 6)
+{
+    TOT3 = TOT2 + 6;
+};
+};
+console.log("Le prix à payer sera de " + TOT3 + "€.");
+
+</script>
+</body>
+</html>

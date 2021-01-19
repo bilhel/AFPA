@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tableau</title>
+</head>
+<body>
+
+<script>
+
+var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
+var search = window.prompt("Entrer le prénom recherché")
+if (tab.includes(search))
+{
+	tab.splice(tab.indexOf(search),1);
+	tab.push(" ");
+	console.log(tab);
+}
+else{alert("ERREUR")
+};
+
+</script>
+</body>
+</html>
