@@ -1,5 +1,6 @@
 var check = document.getElementById('envoie');
-check.addEventListener("click", function verif(event) {
+check.addEventListener("click", function verif(event)
+{
     var Identité = /(^[A-Z]+[a-zA-Zéèêëôœîïûüàáâæç-\s]+$)/;
     var mail = /(^[\w\.-]+@[a-z]+[\.]{1}[a-z]{2,3}$)/;
     var birth = /(^[0-9]{4}[\-]{1}[0-9]{2}[\-]{1}[[0-9]{2}$)/;
@@ -31,7 +32,6 @@ check.addEventListener("click", function verif(event) {
     {
         document.getElementById("erreurName").textContent = "Valide !";
         document.getElementById("erreurName").style.color = 'green';
-        event.preventDefault();
     }
     
     if (!Identité.test(prenom))
@@ -44,7 +44,6 @@ check.addEventListener("click", function verif(event) {
     {
         document.getElementById("erreurPrenom").textContent = "Valide !";
         document.getElementById("erreurPrenom").style.color = 'green';
-        event.preventDefault();
     }
 
     if (sexe1 == false && sexe2 == false && sexe3 == false)
@@ -57,7 +56,6 @@ check.addEventListener("click", function verif(event) {
     {
         document.getElementById("erreurSexe").textContent = "Valide !";
         document.getElementById("erreurSexe").style.color = 'green';
-        event.preventDefault();
     }
 
     if (!birth.test(date))
@@ -70,7 +68,6 @@ check.addEventListener("click", function verif(event) {
     {
         document.getElementById("erreurDate").textContent = "Valide !";
         document.getElementById("erreurDate").style.color = 'green';
-        event.preventDefault();
     }
 
     if (!cp.test(codepostal))
@@ -83,7 +80,6 @@ check.addEventListener("click", function verif(event) {
     {
         document.getElementById("erreurCP").textContent = "Valide !";
         document.getElementById("erreurCP").style.color = 'green';
-        event.preventDefault();
     }
 
     if (!adr.test(adresse)) {
@@ -94,7 +90,6 @@ check.addEventListener("click", function verif(event) {
     else {
         document.getElementById("erreurAdr").textContent = "Valide !";
         document.getElementById("erreurAdr").style.color = 'green';
-        event.preventDefault();
     }
     if (!Localisation.test(ville)) {
         document.getElementById("erreurVille").textContent = "Ville non conforme";
@@ -104,7 +99,6 @@ check.addEventListener("click", function verif(event) {
     else {
         document.getElementById("erreurVille").textContent = "Valide !";
         document.getElementById("erreurVille").style.color = 'green';
-        event.preventDefault();
     }
     if (!mail.test(email)) {
         document.getElementById("erreurMail").textContent = "Adresse mail non conforme";
@@ -114,7 +108,6 @@ check.addEventListener("click", function verif(event) {
     else {
         document.getElementById("erreurMail").textContent = "Valide !";
         document.getElementById("erreurMail").style.color = 'green';
-        event.preventDefault();
     }
     if (sujet == 1)
     {
@@ -125,7 +118,6 @@ check.addEventListener("click", function verif(event) {
     else {
         document.getElementById("erreurSujet").textContent = "Valide !";
         document.getElementById("erreurSujet").style.color = 'green';
-        event.preventDefault();
     }
     if (accept != true) {
         document.getElementById("erreurAccept").textContent = "Veuillez cocher cette case";
@@ -135,7 +127,6 @@ check.addEventListener("click", function verif(event) {
     else {
         document.getElementById("erreurAccept").textContent = "Valide !";
         document.getElementById("erreurAccept").style.color = 'green';
-        event.preventDefault();
     }
     if (question == "") {
         document.getElementById("erreurQuest").textContent = "Ce champ est obligatoire";
@@ -143,8 +134,7 @@ check.addEventListener("click", function verif(event) {
         event.preventDefault();
     }
     else {
-        document.getElementById("erreurQuest").textContent = "Valider";
+        document.getElementById("erreurQuest").textContent = "Valide !";
         document.getElementById("erreurQuest").style.color = 'green';
-        event.preventDefault();
     }
 });

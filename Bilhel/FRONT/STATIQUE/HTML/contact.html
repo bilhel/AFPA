@@ -6,7 +6,7 @@
     <title>Contact</title>
 </head>
 <body>
-    <img src="jarditou_logo.jpg" alt="Logo Jarditou" height="25%" width="25%">
+    <img src="src/img/jarditou_logo.jpg" alt="Logo Jarditou" title="logo" height="25%" width="25%">
     <p>La qualité depuis 70 ans</p>
     <nav>
         <ul>
@@ -16,38 +16,38 @@
         </ul>
     </nav>
     <section>
-    <img src="promotion.jpg" alt="Promotion" height="100%" width="100%">
-    <h1>Contact</h1>
+        <img src="src/img/promotion.jpg" alt="Promotion" title="promo" height="100%" width="100%">
+        <h1>Contact</h1>
     <hr>
     <p>*Ces zones sont obligatoires</p>
     <br>
     <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact">
     <fieldset>
         <legend>Vos coordonnées</legend>
-        <label>Votre nom* : </label><input type="text" name="nom" required>
+        <label for="nom">Votre nom* : </label><input type="text" name="nom" id ="nom" required>
         <br>
-        <label>Votre prénom* : </label><input type="text" name="prenom" required>
+        <label for="prenom">Votre prénom* : </label><input type="text" name="prenom" id="prenom" required>
         <br>
         <br>
-        <label>Sexe* : </label><input type="radio" name="sexe" value="masculin" required> Masculin
+        <label for="sexe">Sexe* : </label><input type="radio" name="sexe" value="masculin" id="sexe" required> Masculin
         <input type="radio" name="sexe" value="feminin" required> Féminin
         <br>
         <br>
-        <label>Date de naissance* : </label><input type="date" name="ddn" id="date" required>
+        <label for="date">Date de naissance* : </label><input type="date" name="ddn" id="date" required>
         <br>
-        <label>Code postal* : </label><input type="text" name="code postal" required>
+        <label for="cp">Code postal* : </label><input type="text" name="code postal" id="cp" required>
         <br>
-        <label>Adresse : </label><input type="text" name="adresse">
+        <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse">
         <br>
-        <label>Ville : </label><input type="text" name="ville">
+        <label for="ville">Ville : </label><input type="text" name="ville" id="ville">
         <br>
-        <label>Email* : </label><input type="text" name="email" placeholder="dave.loper@afpa.fr" required>
+        <label for="email">Email* : </label><input type="text" name="email" id="email" placeholder="dave.loper@afpa.fr" required>
         <br>
     </fieldset>
     <br>
     <fieldset>
         <legend>Votre demande</legend>
-        <label>Sujet* : </label>
+        <label for="sujet">Sujet* : </label>
         <select id="sujet" required> 
         <option value="" selected>Veuillez séléctionner un sujet</option>
         <option value="mes commandes">Mes commandes</option>
@@ -57,17 +57,17 @@
         <option value="autres">Autres</option>
         </select>
         <br>
-        <label>Votre question* : </label><textarea name="commentaire" rows="2" cols="20" required></textarea>
+        <label for="question">Votre question* : </label><textarea name="commentaire" rows="2" cols="20" id="question" required></textarea>
     </fieldset>
         <br>
-        <input type="checkbox" name="j'accepte" value="J'accepte" required>* J'accepte le traitement informatique de ce formulaire
+        <input type="checkbox" name="j'accepte" value="J'accepte" id="check" required>* J'accepte le traitement informatique de ce formulaire
         <br>
         <br>
         <button type="submit">Envoyer</button>
         <button type="reset">Annuler</button>
     </form>
-</section>
-<hr>
+    </section>
+    <hr>
 <footer>
     <nav>
         <ul>

@@ -1,0 +1,57 @@
+.logojarditou {
+    display: flex;
+}
+.toutlejardin {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+.navtop {
+    background-color:black;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+a {
+    color: white;
+    ;
+}
+.navbottom {
+    background-color:black;
+    padding: 5px;
+    margin-top: 5px;
+}
+li{
+    display: inline;
+}
+.colonnedroite {
+    width : 300px;
+    height : 400px;
+    padding: 1em 1em 1em 1em;
+    background-color: rgb(185, 185, 185);
+    order:1
+}
+.corps {
+    display: flex;
+}
+.text {
+    flex-direction: column;
+}
+
+.tableau {
+    overflow-x:auto;
+}
+@media screen and (max-width: 768px) 
+{ 
+    body {
+        font-size: 1.2rem;
+    }
+    .colonnedroite {
+        display: none;
+    }
+    .corps {
+        display: flex;
+    }
+    .navtop>ul>li {
+        display: block;
+   }
+}
