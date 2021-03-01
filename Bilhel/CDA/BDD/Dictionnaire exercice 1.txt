@@ -1,0 +1,34 @@
+Dictionnaire  Exercice 1 :
+
+fiche utilisateur :
+idAbonne		==>	Identification Abonné		==>	INT		==>	1000
+nomAbonne		==>	Nom de l'abonné			==>	VARCHAR 50
+preAbonne		==>	Prénom de l'abonné		==>	VARCHAR 50
+adressAbonne		==>	Adresse de l'abonné		==>	VARCHAR 50
+numAbonne		==>	Numéro de tel abonné		==>	DECIMAL(10.0)
+dateDuJour		==>	Date de l'inscription		==>	DATE
+
+emprunt :
+idEmprunt		==>	Identification Emprunt		==>	INT		==>	500/SEMAINE
+idAbonne		==>	Identification Abonné		==>	INT		==>	1000
+idLivre			==>	Identification Livre		==>	INT		==>	5000
+dateEmprunt		==>	Date d'emprunt du livre		==>	DATE
+dateRetour		==>	Date de retour du livre		==>	DATE
+nbrLivreEmprunte	==>	Nombre de livre emprunté	==>	DECIMAL(1.0)
+nbrRelance		==>	Nombre de relance		==>	DECIMAL(1.0)	==>	10/SEMAINE
+
+fiche livre :
+idLivre			==>	Identification Livre		==>	INT		==>	5000
+titreLivre		==>	Titre du livre			==>	VARCHAR 50
+auteurLivre		==>	Auteur du livre			==>	VARCHAR 50
+dateEditionLivre	==>	Date d'édition du livre		==>	DATE
+couleurLivre		==>	Couleur de la pastille		==>	VARCHAR 50	==>	20
+editeurLivre		==>	Editeur du livre		==>	VARCHAR 50
+
+rebut :
+idRebut			==>	Identification Rebut		==>	INT		==>	100/AN
+idLivre			==>	Identification Livre		==>	INT		==>	5000
+livrePerdu		==>	Livre perdu			==>	BOOLEAN
+livreDeteriore		==>	Livre détérioré			==>	BOOLEAN
+livreVole		==>	Livre volé			==>	BOOLEAN
+dateRebut		==>	Date du rebut			==>	DATE
